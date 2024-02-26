@@ -1,4 +1,4 @@
-#** RabbitMQ.SOlution
+# **RabbitMQ**
 
 This a RabbitMQ implementation using c#
 
@@ -24,7 +24,7 @@ https://www.rabbitmq.com/tutorials
 
 
 ## _Note_
-
+Below is the connection factory which allows you to connect to a RabbitMQ instance on a remote/different machine. The HostName is the IP Address, Username and Password should be different from the default username and password.
 ```C# 
 	var factory = new ConnectionFactory { HostName = "", Port = 5672, UserName = "user", Password = "user" };
 ```
