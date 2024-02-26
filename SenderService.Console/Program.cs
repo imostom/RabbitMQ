@@ -4,7 +4,9 @@ using System.Text;
 
 Console.WriteLine("RabbitMQ Publisher/Sender \n");
 
-var factory = new ConnectionFactory { HostName = "localhost" };
+//var factory = new ConnectionFactory { HostName = "localhost" };
+var factory = new ConnectionFactory { HostName = "", Port = 5672, UserName = "user", Password = "user" };
+
 using var connection = factory.CreateConnection();
 using var channel = connection.CreateModel();
 
